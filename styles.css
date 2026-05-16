@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #f4efe6;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #3b2f2f, #6b4f4f);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #f9d5a4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #5a4a4a;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #f9d5a4;
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fff5e6, #f4efe6);
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #3b2f2f;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #3b2f2f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #6b4f4f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.menu h2 {
+  border-bottom: 3px solid #3b2f2f;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #3b2f2f;
+}
+
+.menu h2:first-of-type {
+  margin-top: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-bottom: 1px dashed #ccc;
+  transition: 0.2s;
+  font-size: 16px;
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.item:hover {
+  background: #f9f3ea;
+  padding-left: 15px;
+}
+
+.item span:last-child {
+  font-weight: bold;
+  color: #6b4f4f;
+}
+
+.reservation {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.reservation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3b2f2f;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.reservation input:focus {
+  outline: none;
+  border-color: #6b4f4f;
+  background: #f9f3ea;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contact h2 {
+  color: #3b2f2f;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: #3b2f2f;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .navbar {
+    gap: 15px;
+    padding: 12px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .menu,
+  .reservation,
+  .contact {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
